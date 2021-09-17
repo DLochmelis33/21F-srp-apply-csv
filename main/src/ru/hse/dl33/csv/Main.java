@@ -37,7 +37,6 @@ public class Main {
 
     // generally not caring about exceptions for now
     public static void main(String[] args) throws IOException {
-        long time = System.currentTimeMillis();
 
         // expecting valid arguments
         String filename = args[0];
@@ -63,6 +62,7 @@ public class Main {
         while (maxQueue.size() > 0) {
             System.out.println(maxQueue.poll().line);
         }
+
     }
 
 }
